@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: black;
+}
+
+.navbar {
+  height: 50px;
+}
+
+header nav .tasnim-logo {
+  position: absolute;
+  right: 33px;
+  background-image: url(images/tasnimnews-logo.png);
+  background-repeat: no-repeat;
+  background-color: #a91e22;
+  background-position: center;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  top: 6px;
+  background-size: 80%;
+}
+
+header nav .tasnim-phrase {
+  position: absolute;
+  top: 0;
+  background-image: url(images/tasnimphrase.png);
+  background-repeat: no-repeat;
+  background-color: black;
+  width: 165px;
+  height: 60px;
+  right: 100px;
+  background-size: contain;
+  background-position: center;
+}
+
+.menu-container {
+  margin-right: 265px;
+  height: 60px;
+  overflow: hidden;
+}
+
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.menu-container ol li {
+  float: right;
+  margin: 0;
+  padding: 8px;
+  display: inline-block;
+}
+.menu-container ol li:hover {
+  filter: invert(35%);
+  transition: 1s;
+}
+
+.menu-container ol li a {
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #fff;
+  padding: 3px;
+  font-size: 20px;
+  font-family: tahoma;
+}
+header nav ul.shortcut-menu {
+  list-style: none;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+}
+
+header nav ul.shortcut-menu li {
+  float: left;
+  background-color: black;
+  padding-left: 12px;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+  background-color: red;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  gap: 20px;
+  /* flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 0px 10px;
+  max-width: 1200px;
+  position: relative; */
+}
+
+/* main{
+  display: block;
+} */
+
+/* .row {
+  margin-left: -10px;
+  margin-right: -10px;
+} */
+/* 
+.right-side {
+  float: right;
+
+} */
+.img-aside-right {
+  width: 20rem;
+  height: 15rem;
+  margin: 0 auto;
+  float: right;
+  padding: 1.1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  direction: rtl;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #1167a8;
+  font-family: tahoma;
+}
+.title:hover {
+  filter: invert(35%);
+  transition: 1s;
+}
+
+.sub-title {
+  font-size: 1.1rem;
+  direction: rtl;
+  font-family: tahoma;
+}
+
+.new-container {
+  border-top: 1px solid #e2e2e2;
+  margin-top: 70px;
+}
+
+.img-subnews {
+  float: right;
+  padding-left: 2rem;
+}
+
+.title-subnews {
+  direction: rtl;
+  font-family: tahoma;
+  font-size: 1em;
+}
+
+.summary-subnews {
+  direction: rtl;
+  padding: 1.5vh;
+  font-family: tahoma;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.button-container button {
+  padding: 5px;
+  margin-top: 20px;
+  background-color: #e3e3e3;
+  border: 1px solid #e3e3e3;
+  width: 49%;
+  float: right;
+  border-radius: 5px;
+  margin-right: 5px;
+  color: #d9534f;
+  font-size: 15px;
+  font-family: tahoma;
+  box-shadow: 2px 2px 5px #e3e3e3;
+}
+
+.trending-link {
+  text-decoration: none;
+  color: #d9534f;
+  float: right;
+  font-family: tahoma;
+  font-weight: bold;
+  background: #fff repeat scroll 0 0;
+}
+
+.trending-news > header {
+  background: #cacaca url(images/header-pattern.png) repeat scroll 0 0;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.trending-content {
+  border-bottom: 1px solid #e3e3e3;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  margin-top: 20px;
+}
+.trending-content article {
+  display: grid;
+  grid-template-columns: 2.8fr 0.3fr 0.1fr;
+  gap: 0px 0px;
+}
+.trending-content article a {
+  text-decoration: none;
+  float: right;
+  text-align: right;
+  display: inline;
+  font-family: tahoma;
+  font-weight: bold;
+  color: black;
+  padding: 0px 5px;
+  margin-top: 10px;
+}
+.trending-content article a:hover {
+  filter: invert(50%);
+  transition: 0.9s;
+}
+.trending-content article .numbers-trending {
+  color: #625a5a;
+  font-family: tahoma;
+  display: inline;
+  font-weight: 700px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-trending-photo {
+  text-align: center;
+  margin-right: -40px;
+}
+.main-trending-photo img {
+  width: 330px;
+  height: 240px;
+  padding-bottom: 10px;
+}
+
+.main-trending-photo-title {
+  text-align: center;
+  padding-right: 10px;
+  font-family: tahoma;
+}
+
+.sub-trending-article img {
+  width: 150;
+  height: 100px;
+  margin-top: 10px;
+}
+.sub-trending-article h5 {
+  text-align: right;
+  font-family: tahoma;
+  display: inline;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+.sub-trending-article h5:hover {
+  filter: invert(45%);
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+.key-words {
+  list-style: none;
+  text-align: right;
+}
+
+.key-words li {
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.key-words li a {
+  text-decoration: none;
+  background-color: #1167a8;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: tahoma;
+}
+.more-top-news {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+}
+.more-top-news a {
+  text-decoration: none;
+  font-family: tahoma;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #d9534f;
+}
+
+.movie-header {
+  background: url(images/header-pattern.png) 0px 0px repeat scroll
+    rgb(202, 202, 202);
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+}
+
+/* .movie-header {
+  margin-bottom: 20px;
+} */
+.movie-header a {
+  text-decoration: none;
+  float: right;
+  font-family: tahoma;
+  color: #d9534f;
+  background-color: #fff;
+  padding: 2px;
+  font-weight: bold;
+  line-height: 1.5rem;
+  
+}
+footer {
+  background-color: black;
+  width: 100%;
+  height: 30vh;
+  margin-top: 20px;
+}
+
+.footer-header {
+  display: flex;
+  max-width: 1270px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+padding: 10px;
+}
+.footer-header a img {
+  padding-right: 10px;
+}
+.footer-header .tasnim-logo-footer {
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.footer-header p {
+text-align: center;
+display: block;
+font-family: tahoma;
+color: white;
+direction: rtl;
+margin-top: 10px;
+font-size: 30px;
+}
+
+.footer-links {
+max-width: 1270px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+
+}
+
+.footer-links ul {
+  list-style-type: none;
+  float: right;
+  column-count: 3;
+  margin-top: 10px;
+  text-align: center;
+}
+.footer-links ul li {
+padding: 5px;
+margin-top: 10px;
+
+}
+
+.footer-links ul li a {
+  line-height: 20%;
+  text-decoration: none;
+  color: white;
+  font-family: tahoma;
+
+}
+
+
+
+
+
+
+
+
